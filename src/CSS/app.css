@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+.recepie-list{
+    border-right: 1px solid black;
+    width: 50%;
+    min-height: 100vh;
+    margin-left: 2rem;
+}
+.Add-recepie-btn-container{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 20px;
+}
+.btn-edit{
+margin-right: 1rem;
+}
+.btn-delete{
+background-color: red;
+}
+.btn-delete:hover{
+    border: none;
+    outline: none;
+    background-color: salmon;
+}
+.recepie-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recepie{
+    border-top: 1px solid black;
+}
+.recepie:first-of-type{
+    border-top: none;
+}
+.recepie-edit{
+    top: 0;
+    right: 0;
+    width: 45%;
+}
+.MainFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.close-edit{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    padding: 0;
+    background: none;
+    font-size: 3rem;
+}
+.close-edit:hover{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    padding: 0;
+    background: none;
+    font-size: 3rem;
+}
+.close-edit-container{
+    text-align: end;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+.Ingrediant-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto) ;
+    column-gap: 30px;
+}
+textarea{
+    resize: none;
+    height: 100px;
+}
+@media (max-width:1000px) {
+    .Ingrediant-container,.grid{
+        grid-template-columns: 1fr;
+    }
+}
